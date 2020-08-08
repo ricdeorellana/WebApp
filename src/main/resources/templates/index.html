@@ -1,59 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-	<title>My Travel Website</title>
+<title>MM Home</title>
+<link th:replace="fragments/head">
 </head>
 <body>
-	<h1>Welcome to my Travel Website</h1>
-	
-	<h2>Beware Sepelling Errors</h2>
-		
-		<p>This site is all about the<span> places </span>that I want to travel</p>
+	<div th:replace="fragments/nav"></div>
+	<br>
+	<div class="container-fluid">
+		<br>
 
-	<h2>Here are some of the places that I want to visit</h2>
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+				<p>No opinions answered oh felicity is resolved hastened.
+					Produced it friendly my if opinions humoured. Enjoy is wrong folly
+					no taken. It sufficient instrument insipidity simplicity at
+					interested. Law pleasure attended differed mrs fat and formerly.
+					Merely thrown garret her law danger him son better excuse. Effect
+					extent narrow in up chatty. Small are his chief offer happy had.</p>
+			</div>
+		</div>
 
-	<ul>
-		<li>
-			<a 
-				href="http://www.italia.it/en/home.html" target=_blank> Spain
-			</a>
-				<img src="https://external-preview.redd.it/sgupg2QyvwFm7eLaH0isYTSx1IAYT2cnG9EG2qaK7dc.png?width=960&crop=smart&auto=webp&s=69269a64890f2c274efd0adb18b266f6e4e3fab2" alt="Oops! Cannot Find Image" height="100" width="150"/>
-		</li>
-		
-		<li><a href="https://www.google.com" target=_blank>Italy</a></li>
-		
-		<li><a>Japan</a></li>
-		
-		<li><a>Alaska</a></li>
-	</ul>
 
-	<table>
 
-		<tr>
-		  <th>Destination</th>
-		  <th>Capital</th>
-		  <th>Language</th>
-		</tr>
-		<tr>
-			<td>Spain</td>
-			<td>Madrid</td>
-			<td>Spanish</td>
-		</tr>
-		<tr>
-			<td>Italy</td>
-			<td>Rome</td>
-			<td>Italian</td>
-		</tr>
-		<tr>
-			<td>Aruba</td>
-			<td>Ornjestad</td>
-			<td>Dutch</td>
-		</tr>
-		<tr>
-			<td>Alaska</td>
-			<td>Juneau</td>
-			<td>English</td>
-		</tr>
-	</table>
+
+		<div class="slideshow">
+			<img class="img-fluid"
+				src="https://i.ibb.co/k95Rmv8/20200807-164927.jpg"
+				alt="20200807-164927" border="0" width="100%" height="500"> <img
+				class="img-fluid" src="https://i.ibb.co/tmrMJ9H/img-1.jpg"
+				alt="img-1" border="0" width="100%" height="500px"> <img
+				class="img-fluid" src="https://i.ibb.co/qJ9ZRzv/img-2.jpg"
+				alt="img-2" border="0" width="100%" height="500"> <img
+				class="img-fluid" src="https://i.ibb.co/1LTBrGk/img-3.jpg"
+				alt="img-3" border="0" width="100%" height="500"> <img
+				class="img-fluid" src="https://i.ibb.co/ByRrcgT/img-4.jpg"
+				alt="img-4" border="0" width="100%" height="500"> <img
+				class="img-fluid" src="https://i.ibb.co/FY6fgvW/img-5.jpg"
+				alt="img-5" border="0" width="100%" height="500">
+			<div class="row">
+				<div class="col-md-2 offset-md-5">
+					
+
+						<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+				
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+
+				<h1 class="display-4 text-center border border-primary rounded" style="padding: 200px;">
+					<b>We are here for you.</b>
+				</h1>
+
+
+			</div>
+
+		</div>
+		<div class="row">
+			<div class="col-md6 offset-md-3">
+				<div class="toolbar">
+
+					<h1>We do:</h1>
+					<ul>
+						<li>Roofing</li>
+						<li>Bathrooms</li>
+						<li>Bedrooms</li>
+						<li>Flooring</li>
+						<li>Much More!</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<br> <br>
+	</div>
+	<div th:replace="fragments/footer"></div>
+	<script th:replace="fragments/scripts"></script>
 </body>
 </html>

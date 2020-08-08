@@ -1,0 +1,49 @@
+body {
+	background-image: linear-gradient(#1da1f2, gray);
+	margin: 0px;
+}
+
+navbar {
+	margin: 0;
+	padding: 0;
+}
+
+P {
+	text-color: white;
+	text-align: center;
+	padding: 25px 50px;
+	border-style: outset;
+	border-color: grey;
+	background-color: white;
+}
+
+* {
+	box-sizing: border-box;
+
+}
+
+.img-fluid {
+	max-width: 40%;
+	max-height: 500px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #80615A;
+	text-align: center;
+}
+
+.display-4 {
+	background-image: url("https://theultimatellc.com/wp-content/uploads/2015/01/bigstock-Smiling-Construction-worker-ma-372724511.jpg");
+		color: #ffffff;
+}
+
+.toolbar ul li {
+	font-size: 30px;
+}
