@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Thank You</title>
+<link th:replace="fragments/head">
+</head>
+<body>
+		<div th:replace="fragments/nav"></div>
+	<div class="container">
+	<br>
+	<br>
+		<div class="row">
+			<div class="col-md-12">
+				<p>Thank You</p>
+				<p th:text="${firstName}" />
+			</div>
+		</div>
+	</div>
+
+	<div th:replace="fragments/footer"></div>
+	<script th:replace="fragments/scripts"></script>
+</body>
+</html>

@@ -39,6 +39,6 @@ public class WebAppController {
 		model.addAttribute("phoneNumber", quote.getPhoneNumber());
 		quoteRepository.save(quote); 
 		
-		return "request";
+		return "thanks";
 	}
 }

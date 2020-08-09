@@ -120,4 +120,14 @@ V - QUOTE PAGE (and controller logic)
 	- I have added our thymeleaf form for now
 	- It stores our data, although restarting the program seems to not be storing it!
 	
+VI - THANKS PAGE
+	The following is an additional step to the program that I have created in order to ensure that it feels responsive.
+	
+	1. Thanks Page
+	- This page displays the first name of the user and also says thank you!
+	- It is very simple. We define our objects into our controller and then save them in the POST.
+	
+	2. What about restrictions to emails/phones?
+	- We need to ensure that the user inputs valid information. We don't need last name, but we do need fist name and one way to contact.
+	
 		

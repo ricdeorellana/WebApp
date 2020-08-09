@@ -4,6 +4,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Pattern;
 
 @Entity
 public class Quote {
@@ -12,7 +14,9 @@ public class Quote {
 	private Long id;
 	private String firstName;
 	private String lastName;
+	@Pattern(regexp = "[0-9]{10}", message = "Wrong")
 	private String phoneNumber;
+	@Email(message= "Please provide a valid email")
 	private String email;
 	public Quote() {
 	}
