@@ -9,6 +9,9 @@
 	<div class="container-fluid">
 
 		<h1>Get a Quote From Us</h1>
+<div class="row" >
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+	
 		<form action="#" th:action="@{/quote}" th:object="${quote}"
 			method="post">
 
@@ -26,6 +29,8 @@
 			​
 			<button class="btn btn-primary">Get Your Quote</button>
 		</form>
+		</div>
+		</div>
 	</div>
 
 	<div th:replace="fragments/footer"></div>
