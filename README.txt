@@ -71,5 +71,53 @@ III - VISION FOR HOME PAGE
 	
 	7. Added a footer element!
 		
-
+IV - INSPIRE WITH ABOUT US
+	1. - The goal of our About index page is to create an inspirational page that captivates the essence of the company.
+	We want 
+	- The heading thats inviting
+	- A summary intro
+	- A quote would be nice
+	- Add a picture to make sure theres more padding
+	- Include address (COULD BE IN THE FOOTER MAYBE?)
+	
+	2. To start, I created a grand Title that lets know we are in the about us page
+	- includes the company name
+	
+	3. I added a nice, centered summary. It could be potentially moved down but it looks nice for now.
+	
+	4. Added a quote block for it to look nice and professional
+	
+	5. An image could help drive the point home
+	- Will be using a stock photo
+	
+	6. Created a block that shows the address
+	
+	
+V - QUOTE PAGE (and controller logic)
+	1. This is where the fun begins.
+	The Goal for this page is to give the customer a chance to leave their information behind. 
+	- I want to get either a phone or an email, it can be one, both but not neither.
+	- A first name is necessary, last name can be excluded (some people like privacy.
+	- Of course, we do need a submit button too
+	
+	2. The biggest hurdle is not actually HTML. We need to create the logic for the page to work.
+	There will be 3 important pieces to our logic
+	QUOTE MODEL 
+	- Our quote model will hold a long id that will auto generate with each submission.
+	- First name, Last Name, phone number, and an email var will be made
+	- With our @entity quote and @id, our database will be easy to manage
+	
+	QUOTE REPOSITORY
+	- Our repo will import our Quote entity and Long id
+	- It will be autowired to our app controller
+	
+	QUOTE CONTROLLER
+	- Finally, we need to follow up on wiring of our Repo
+	- We will also need to create the logic of our repo for it to save on our pages entries
+	- I created a post mapping page that will go ahead and receive all the inputs and save it to our repo
+	
+	3. Its time to work on our thymeleaf forms on our request.html!
+	- I have added our thymeleaf form for now
+	- It stores our data, although restarting the program seems to not be storing it!
+	
 		

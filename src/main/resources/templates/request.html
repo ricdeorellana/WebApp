@@ -5,10 +5,29 @@
 <link th:replace="fragments/head">
 </head>
 <body>
+	<div th:replace="fragments/nav"></div>
 	<div class="container-fluid">
-		<div th:replace="fragments/nav"></div>
-	
+
+		<h1>Get a Quote From Us</h1>
+		<form action="#" th:action="@{/quote}" th:object="${quote}"
+			method="post">
+
+			<div class="form-group">
+					<input type="text" class="form-control" placeholder="First Name"
+					th:field="*{firstName}" /> 
+					<input type="text" class="form-control"
+					placeholder="Last Name" th:field="*{lastName}" /> 
+					<input
+					type="text" class="form-control" placeholder="Email"
+					th:field="*{email}" />
+						<input type="text" class="form-control" placeholder="Phone Number"
+					th:field="*{phoneNumber}" /> 
+			</div>
+			​
+			<button class="btn btn-primary">Get Your Quote</button>
+		</form>
 	</div>
+
 	<div th:replace="fragments/footer"></div>
 	<script th:replace="fragments/scripts"></script>
 </body>
