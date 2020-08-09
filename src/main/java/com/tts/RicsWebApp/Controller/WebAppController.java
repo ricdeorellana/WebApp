@@ -33,12 +33,15 @@ public class WebAppController {
 	
 	@PostMapping("/quote")
 	public String quoteEntry(Quote quote, Model model) {
+	
+	
 		model.addAttribute("firstName", quote.getFirstName());
 		model.addAttribute("lastName", quote.getLastName());
 		model.addAttribute("email", quote.getEmail());
 		model.addAttribute("phoneNumber", quote.getPhoneNumber());
 		quoteRepository.save(quote); 
-		
 		return "thanks";
+		
+		
 	}
 }

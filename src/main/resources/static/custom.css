@@ -1,5 +1,6 @@
 body {
-	background-image: linear-gradient(#1da1f2, gray);
+	background-image: linear-gradient(to right, #f6f1d3, grey);
+	
 	margin: 0px;
 }
 
@@ -23,7 +24,7 @@ P {
 }
 
 .img-fluid {
-	max-width: 40%;
+	max-width: 750px;
 	max-height: 500px;
 	display: block;
 	margin-left: auto;
@@ -35,6 +36,7 @@ P {
 	left: 0;
 	bottom: 0;
 	width: 100%;
+	height:30px;
 	background-color: #80615A;
 	text-align: center;
 }
